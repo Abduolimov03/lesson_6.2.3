@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobil Telefonlar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .phones {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .phone {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .phone:hover {
+            transform: scale(1.02);
+        }
+
+        .phone img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .phone h3 {
+            margin-top: 12px;
+            color: #34495e;
+        }
+
+        .phone p {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+              .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mobil Telefonlar Bo‘limi</h1>
+    <div class="nav-links">
+        <a href="{% url 'home_page'%}">Asosiy sahifa</a>
+    </div>
+
+    <div class="phones">
+        <div class="phone">
+            <img src="https://images.samsung.com/is/image/samsung/p6pim/uz/2401/gallery/uz-galaxy-s24-sm-s921blbgskz-thumb-539680720?$344_344_PNG$" alt="Samsung Galaxy S24">
+            <h3>Samsung Galaxy S24</h3>
+            <p>6.1" AMOLED ekran, Snapdragon 8 Gen 3, 50MP kamera.</p>
+        </div>
+
+        <div class="phone">
+            <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-max-1.jpg" alt="iPhone 15 Pro Max">
+            <h3>iPhone 15 Pro Max</h3>
+            <p>6.7" Super Retina XDR, A17 Pro chip, 5x optik zoom.</p>
+        </div>
+
+        <div class="phone">
+            <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-14-1.jpg" alt="Xiaomi 14">
+            <h3>Xiaomi 14</h3>
+            <p>Snapdragon 8 Gen 3, Leica kamera, 90W tez zaryad.</p>
+        </div>
+
+        <div class="phone">
+            <img src="https://fdn2.gsmarena.com/vv/pics/infinix/infinix-zero-30-4g-1.jpg" alt="Infinix Zero 30">
+            <h3>Infinix Zero 30</h3>
+            <p>6.78" AMOLED, 108MP kamera, arzon narxda kuchli model.</p>
+        </div>
+    </div>
+
+</body>
+</html>
